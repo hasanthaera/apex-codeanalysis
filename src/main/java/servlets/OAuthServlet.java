@@ -66,7 +66,7 @@ public class OAuthServlet extends HttpServlet {
         clientSecret = this.getInitParameter("clientSecret"); //"9C436E6D9B0B5A002669037C0CFC42DD3FB4EC4076ACCAC7E5D5CB3311850C08";//
         redirectUri = this.getInitParameter("redirectUri");    // https://canvas.herokuapp.com/oauth/_callback
         environment = this.getInitParameter("environment");    // https://login.salesforce.com
-
+System.out.println("environment"+environment);
         try {
             authUrl = environment
                     + "/services/oauth2/authorize?response_type=code&client_id="
