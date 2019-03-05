@@ -62,10 +62,14 @@ public class OAuthServlet extends HttpServlet {
 
         String environment;
 
-        clientId = this.getInitParameter("clientId"); //"3MVG959Nd8JMmavRPLygxKSE3PYNHhQfm8hLPhatvnkT8_jfGTDlgOaUCPqcYYchtoK4GjWuphvTrE.cOI4nn";//
+        /*clientId = this.getInitParameter("clientId"); //"3MVG959Nd8JMmavRPLygxKSE3PYNHhQfm8hLPhatvnkT8_jfGTDlgOaUCPqcYYchtoK4GjWuphvTrE.cOI4nn";//
         clientSecret = this.getInitParameter("clientSecret"); //"9C436E6D9B0B5A002669037C0CFC42DD3FB4EC4076ACCAC7E5D5CB3311850C08";//
         redirectUri = this.getInitParameter("redirectUri");    // https://canvas.herokuapp.com/oauth/_callback
-        environment = this.getInitParameter("environment");    // https://login.salesforce.com
+        environment = this.getInitParameter("environment");    // https://login.salesforce.com*/
+        clientId = "3MVG959Nd8JMmavRPLygxKSE3PYNHhQfm8hLPhatvnkT8_jfGTDlgOaUCPqcYYchtoK4GjWuphvTrE.cOI4nn";
+        clientSecret = "9C436E6D9B0B5A002669037C0CFC42DD3FB4EC4076ACCAC7E5D5CB3311850C08";
+        redirectUri =  "https://canvas.herokuapp.com/oauth/_callback";
+        environment =  "https://test.salesforce.com";
 System.out.println("environment"+environment);
         try {
             authUrl = environment
