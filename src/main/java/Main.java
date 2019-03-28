@@ -44,6 +44,7 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) throws Exception{
+        System.out.println("Begin main");
 
         boolean heroku = false;
         // A hacky way to determine if we are running on heroku or not
